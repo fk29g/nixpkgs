@@ -265220,7 +265220,7 @@ self: {
       license = lib.licenses.lgpl21Only;
       hydraPlatforms = lib.platforms.none;
     }
-  ) { inherit (pkgs) webkitgtk_4_0; };
+  ) { webkitgtk_4_0 = null; };
 
   gi-javascriptcore6 = callPackage (
     {
@@ -266172,7 +266172,7 @@ self: {
       badPlatforms = lib.platforms.darwin;
       hydraPlatforms = lib.platforms.none;
     }
-  ) { inherit (pkgs) webkitgtk_4_0; };
+  ) { webkitgtk_4_0 = null; };
 
   gi-webkit2webextension = callPackage (
     {
@@ -266232,7 +266232,7 @@ self: {
       hydraPlatforms = lib.platforms.none;
       broken = true;
     }
-  ) { inherit (pkgs) webkitgtk_4_0; };
+  ) { webkitgtk_4_0 = null; };
 
   gi-webkitwebprocessextension = callPackage (
     {
@@ -672199,7 +672199,7 @@ self: {
       )
       {
         inherit (pkgs) gtk3;
-        inherit (pkgs) webkitgtk_4_0;
+        webkitgtk_4_0 = null;
       };
 
   tibetan-utils = callPackage (
@@ -719620,7 +719620,7 @@ self: {
       badPlatforms = lib.platforms.darwin;
       hydraPlatforms = lib.platforms.none;
     }
-  ) { inherit (pkgs) webkitgtk_4_0; };
+  ) { webkitgtk_4_0 = null; };
 
   webkitgtk3 = callPackage (
     {
